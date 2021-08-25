@@ -1,24 +1,34 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Models;
 
 
 namespace DL
 {
-    public class IResturantRepo
+    public interface IResturantRepo
     {
-        public interface IPetRepo
-    {
-        List<Resturants> GetAllResturants();
+        List<Resturant> GetAllResturants();
 
-        Resturants AddAResturant(Resturants Resturant);
+        Resturant AddAResturant(Resturant resturant);
 
-        Reviews AddAReview(Reviews review);
+        Review AddAMeal(Review review);
 
-        Resturants SearchAResturantByName(string name);
+        Resturant SearchAResturantByName(string name);
 
-        List<Reviews> GetReviewByResturantId(int resturantId);
+        List<Review> GetReviewByResturantId(int resturantId);
 
-    }
+        void DeleteAResturant(Resturant resturant);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

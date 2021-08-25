@@ -1,12 +1,32 @@
-using System;
 using Models;
+using BL;
+using DL;
+using System;
+using System.Collections.Generic;
+using Serilog;
 
+/// <summary>
+/// This is the Main Menu app that has the method to display usres, 
+/// Resturants  and reviews for the resturants
+/// </summary>
 
 namespace UI
 {
    public class MainMenu :IMenu
     {
-       // Users user = new Users();
+
+        public MainMenu(IResturantBL bl)
+        {
+            _resturantbl = bl;
+            Log.Logger = new LoggerConfiguration()
+                            .MinimumLevel.Debug()
+                            .WriteTo.Console()
+                            .WriteTo.File("../logs/resturantlogs.txt", rollingInterval:RollingInterval.Day)
+                            .CreateLogger();
+            Log.Information("UI begining");
+        }
+
+
       public void start(){
           bool repeat = true;
         do{
@@ -41,9 +61,7 @@ namespace UI
             }while(repeat);
 
        }
-        public void ViewAllResturants(){
-            Console.WriteLine("View All Resturants.\n");
-        }
+        
         public void AddAReview(){
             Console.WriteLine("Add a review for a resturant.\n");
         }
@@ -54,6 +72,24 @@ namespace UI
         public void ShowUsers(){
 
             Console.WriteLine("Show users\n");
+        }
+
+       /// <summary>
+       /// method to display all resturants from resturants table
+       /// </summary>
+
+        private void ViewAllResturants() 
+        {
+            List<Resturant> resturant = _resturantbl.ViewAllResturants();
+            foreach(Resturant resturant in resturants)
+            {
+                Console.WriteLine($"{resturant.Id}");
+                Console.WriteLine($"{resturant.Name}");
+                Console.WriteLine($"{resturant.Details}");
+                Console.WriteLine($"{resturant.Address}");
+
+                Console.WriteLine("-----------------------------------------");
+            }
         }
 
     }

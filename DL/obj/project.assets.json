@@ -5818,11 +5818,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Revature\\210726-wvu-net-ext\\P0_Resturant\\DL\\DL.csproj",
+      "projectUniqueName": "C:\\Revature\\210726-wvu-net-ext\\P0-Hanan-Elarabi\\DL\\DL.csproj",
       "projectName": "DL",
-      "projectPath": "C:\\Revature\\210726-wvu-net-ext\\P0_Resturant\\DL\\DL.csproj",
+      "projectPath": "C:\\Revature\\210726-wvu-net-ext\\P0-Hanan-Elarabi\\DL\\DL.csproj",
       "packagesPath": "C:\\Users\\um-zi\\.nuget\\packages\\",
-      "outputPath": "C:\\Revature\\210726-wvu-net-ext\\P0_Resturant\\DL\\obj\\",
+      "outputPath": "C:\\Revature\\210726-wvu-net-ext\\P0-Hanan-Elarabi\\DL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\um-zi\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -5837,8 +5837,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Revature\\210726-wvu-net-ext\\P0_Resturant\\Models\\Models.csproj": {
-              "projectPath": "C:\\Revature\\210726-wvu-net-ext\\P0_Resturant\\Models\\Models.csproj"
+            "C:\\Revature\\210726-wvu-net-ext\\P0-Hanan-Elarabi\\Models\\Models.csproj": {
+              "projectPath": "C:\\Revature\\210726-wvu-net-ext\\P0-Hanan-Elarabi\\Models\\Models.csproj"
             }
           }
         }

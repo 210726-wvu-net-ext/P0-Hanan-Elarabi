@@ -91,3 +91,6 @@ C:\Revature\210726-wvu-net-ext\P0_Resturant\UI\bin\Debug\net5.0\runtimes\win\lib
 C:\Revature\210726-wvu-net-ext\P0_Resturant\UI\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Revature\210726-wvu-net-ext\P0_Resturant\UI\bin\Debug\net5.0\DL.dll
 C:\Revature\210726-wvu-net-ext\P0_Resturant\UI\bin\Debug\net5.0\DL.pdb
+C:\Revature\210726-wvu-net-ext\P0-Hanan-Elarabi\UI\obj\Debug\net5.0\UI.dll
+C:\Revature\210726-wvu-net-ext\P0-Hanan-Elarabi\UI\obj\Debug\net5.0\ref\UI.dll
+C:\Revature\210726-wvu-net-ext\P0-Hanan-Elarabi\UI\obj\Debug\net5.0\UI.pdb
